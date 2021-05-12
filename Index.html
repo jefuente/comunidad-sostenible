@@ -20,7 +20,7 @@
 	<style>
 		* { outline: 1px dotted red; }
 
-		#fondo-imagen{
+		#fondo-semilla{
 			background-image:url("img/semilla.jpg");
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -28,19 +28,37 @@
 			min-height: 400px;
 			color:black;
 		}
-
 		.pd-10-35-5-35{
 			padding: 10% 35% 5% 35%;
 		}	
+
+		#fondo-pizarron{
+			background-image:url("img/fondo.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			min-height: 435px;
+			color: white;
+		}
+		.icono{
+			width:90px;
+			height: 60px;
+		}
+		img{
+			display:block;
+			margin:auto;
+			padding:auto;
+		}
 		
+		.bg-img-block{
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+
 	</style>
-
-
-
 </head>
-
 <body>
-
 	<!--INICIO MENU-->
 
 	<nav class="navbar navbar-expand-lg navbar-light">
@@ -78,7 +96,7 @@
 	<div class="container-fluid" >
 
 <!--	<div class="col-12" >-->
-			<div id="fondo-imagen" class= "row">
+			<div id="fondo-semilla" class= "row">
 			</div>	
 			<div class = "bg-gray">	
 			<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate maiores, ratione officiis illo exercitationem itaque eum tempora deserunt consequuntur totam nihil aliquam numquam quaerat alias dolorum magnam accusamus animi quas!</p>
@@ -109,12 +127,11 @@
                 <img class= "img-fluid" src="img/metodo.JPG" alt="" srcset="">
             </div>
             <div class="col-6">
-                <img class="bg-img-block" src="img/fondo.jpg" alt="" srcset="">
-				<!--
-				<img src="img/iconos/metodologia-icon.png" alt="" srcset="">
-                <h3>Metodología</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, tempora consequatur. Ipsam porro ad labore dolore tempore nihil, quidem architecto officiis perferendis reprehenderit excepturi minus perspiciatis facere, dignissimos quibusdam ipsa?</p>
-				-->
+				<div id="fondo-pizarron" class= "row">
+					<img class="icono" src="img/iconos/metodologia-icon.png" alt="" srcset="">
+					<h3 class="text-center">Metodología</h3>
+					<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, tempora consequatur. Ipsam porro ad labore dolore tempore nihil, quidem architecto officiis perferendis reprehenderit excepturi minus perspiciatis facere, dignissimos quibusdam ipsa?</p>
+				</div>				
 			</div>
         </div>
 
@@ -122,53 +139,73 @@
 
 
 	<div class="container">
-		<div class="containes"><h3>Servicios</h3>
+		<div class="container"><h3 class="text-center">Servicios</h3>
 		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis distinctio expedita aliquam officiis suscipit illo sapiente asperiores aspernatur quibusdam fugit. Dolor possimus, neque id harum aspernatur enim dolore obcaecati impedit.</p>
 		</div>
 		<div class="row">
-			<div class="col-4  bg-green">
-				<p class="text-center">NO ES ANCHO COMPLETO</p>
+			<div class="col-4">
+				<img src="img/iconos/servicios-icon/educacion.png" alt="" srcset="" class="pd-10-35-5-35">
+                <h3 class="text-center">Educación paea el Desarrollo Sostenible</h3>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, tempora consequatur. Ipsam porro ad labore dolore tempore nihil, quidem architecto officiis perferendis reprehenderit excepturi minus perspiciatis facere, dignissimos quibusdam ipsa?</p>
 			</div>
-			<div class="col-4  bg-green">
-				<p class="text-center">NO ES ANCHO COMPLETO</p>
+			<div class="col-4">
+				<img src="img/iconos/servicios-icon/mitigacion.png" alt="" srcset="" class="pd-10-35-5-35">
+                <h3 class="text-center">Mitigación Cambio Climático</h3>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, tempora consequatur. Ipsam porro ad labore dolore tempore nihil, quidem architecto officiis perferendis reprehenderit excepturi minus perspiciatis facere, dignissimos quibusdam ipsa?</p>
 			</div>
-			<div class="col-4  bg-green">
-				<p class="text-center">NO ES ANCHO COMPLETO</p>
+			<div class="col-4">
+				<img src="img/iconos/servicios-icon/bienestar.png" alt="" srcset="" class="pd-10-35-5-35">
+                <h3 class="text-center">Bienestar Ocupacional</h3>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, tempora consequatur. Ipsam porro ad labore dolore tempore nihil, quidem architecto officiis perferendis reprehenderit excepturi minus perspiciatis facere, dignissimos quibusdam ipsa?</p>
 			</div>
 		
 		</div>
 
 		<div class="row">
-			<div class="col-4  bg-green">
-				<p class="text-center">NO ES ANCHO COMPLETO</p>
+			<div class="col-4">
+				<img src="img/iconos/servicios-icon/seguridad-icon.png" alt="" srcset="" class="pd-10-35-5-35">
+                <h3 class="text-center">Consultorias en Seguridad Ambiental y Medio Ambiente</h3>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, tempora consequatur. Ipsam porro ad labore dolore tempore nihil, quidem architecto officiis perferendis reprehenderit excepturi minus perspiciatis facere, dignissimos quibusdam ipsa?</p>
 			</div>
-			<div class="col-4  bg-green">
-				<p class="text-center">NO ES ANCHO COMPLETO</p>
+			<div class="col-4">
+				<img src="img/iconos/servicios-icon/manejo-de-agua.png" alt="" srcset="" class="pd-10-35-5-35">
+                <h3 class="text-center">Manejo de Aguas</h3>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, tempora consequatur. Ipsam porro ad labore dolore tempore nihil, quidem architecto officiis perferendis reprehenderit excepturi minus perspiciatis facere, dignissimos quibusdam ipsa?</p>
 			</div>
-			<div class="col-4  bg-green">
-				<p class="text-center">NO ES ANCHO COMPLETO</p>
+			<div class="col-4">
+				<img src="img/iconos/servicios-icon/agricultura-icon.png" alt="" srcset="" class="pd-10-35-5-35">
+                <h3 class="text-center">Agricultura</h3>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, tempora consequatur. Ipsam porro ad labore dolore tempore nihil, quidem architecto officiis perferendis reprehenderit excepturi minus perspiciatis facere, dignissimos quibusdam ipsa?</p>
 			</div>
 		
 		</div>
 	</div>
 
-	<div class="container-fluid">
+	<div class="container-fluid text-center bg-green text-white" >
+		<h4>Proyectos</h4>
+		<div class="container">
 		<div class="row">
-			<div class="col-3 bg-green">
-				<p class="text-center">ANCHO COMPLETO</p>
-			</div>
-			<div class="col-3 bg-green">
-				<p class="text-center">ANCHO COMPLETO</p>
-			</div>
-			<div class="col-3 bg-green">
-				<p class="text-center">ANCHO COMPLETO</p>
-			</div>
-			<div class="col-3 bg-green">
-				<p class="text-center">ANCHO COMPLETO</p>
-			</div>
+			<div class= "col-6">
+				<img class="bg-img-block col-12" src="img/fotos/img-0352.JPG" alt="" srcset="">
+			</div>	
+			<div class="col-6">
+				<h4 class="text-left">Nombre del Proyecto 1</h4>
+				<h5 class="text-left">Nombre de Distrito</h5>
+				<p class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eveniet natus harum a officiis laboriosam sit fugiat ipsum tempore illum minima accusantium expedita praesentium doloremque ratione molestias esse, dolor quisquam.</p>
+			</div>										
+		<div class="row">
+			<div class= "col-6">
+				<img class="bg-img-block col-12" src="img/fotos/img-9246.jpg" alt="" srcset="">
+			</div>	
+			<div class="col-6">
+				<h4 class="text-left">Nombre del Proyecto 2</h4>
+				<h5 class="text-left">Nombre del Distrito</h5>
+				<p class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolore quis, ipsum aut eligendi aliquid quaerat! Quisquam quae, quibusdam facere consequuntur molestias earum vero fugit aspernatur, beatae explicabo, laudantium porro!</p>
+			</div>	
+		</div>		
+		</div>
 		</div>
 	</div>
-
 	</div>
 	<!--/container-fluid-->
 </body>
