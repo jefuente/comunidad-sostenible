@@ -1,1 +1,35 @@
 /* Inserta tu codigo aqui */
+.fondo-semilla {
+    background-image: url("../img/semilla.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 400px;
+}
+.fondo-metodo {
+    background-image: url("../img/metodo.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 470px;
+}
+
+.fondo-pizarron {
+    background-image: url("../img/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 470px;
+    color: white;
+}
+
+.icono {
+    width: 90px;
+    height: 60px;
+}
+
+img {
+    display: block;
+    margin: auto;
+    padding: auto;
+}
