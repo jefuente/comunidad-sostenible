@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="css/main.css">
 
     <style>
-        /*	* {
+        /** {
 			outline: 1px dotted red;
 		}
 	*/
-        #fondo-semilla {
+        .fondo-semilla {
             background-image: url("img/semilla.jpg");
             background-size: cover;
             background-repeat: no-repeat;
@@ -24,32 +24,33 @@
             min-height: 400px;
         }
 
-        #fondo-metodo {
-            background-image: url("img/metodo.JPG");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            min-height: 435px;
-        }
+        .fondo-metodo {
+    background-image: url("img/metodo.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 470px;
+}
 
-        #fondo-pizarron {
-            background-image: url("img/fondo.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            min-height: 435px;
-            color: white;
-        }
+.fondo-pizarron {
+    background-image: url("img/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 470px;
+    color: white;
+}
 
-        .icono {
-            width: 90px;
-        }
+.icono {
+    width: 90px;
+    height: 60px;
+}
 
-        img {
-            display: block;
-            margin: auto;
-            padding: auto;
-        }
+img {
+    display: block;
+    margin: auto;
+    padding: auto;
+}
     </style>
 </head>
 
@@ -84,11 +85,11 @@
     </nav>
     <!--FINAL MENU-->
     <div class="container-fluid">
-        <div id="fondo-semilla" class="row">
+        <div class="row fondo-semilla">
         </div>
     </div>
     <div class="container-fluid bg-gray">
-        <p class="text-center p-5 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate maiores,
+        <p class="text-center p-5 ms-5 me-5 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate maiores,
             ratione officiis illo exercitationem itaque eum tempora deserunt consequuntur totam nihil aliquam numquam
             quaerat alias dolorum magnam accusamus animi quas!</p>
 
@@ -97,35 +98,39 @@
         <div class="row">
             <div class="col">
                 <img src="img/iconos/mision/mision.png" alt="" srcset="" class="mx-auto mt-5 mb-3">
-                <h3 class="text-center">Mision</h3>
+                <h4 class="text-center"><strong>Mision</strong> </h4>
                 <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, tempora
                     consequatur. Ipsam porro ad labore dolore tempore nihil, quidem architecto officiis perferendis
                     reprehenderit excepturi minus perspiciatis facere, dignissimos quibusdam ipsa?</p>
             </div>
             <div class="col">
                 <img src="img/iconos/mision/vision.png" alt="" srcset="" class="mx-auto mt-5 mb-3">
-                <h3 class="text-center">Vision</h3>
+                <h4 class="text-center"><strong>Vision</strong></h4>
                 <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, tempora
                     consequatur. Ipsam porro ad labore dolore tempore nihil, quidem architecto officiis perferendis
                     reprehenderit excepturi minus perspiciatis facere, dignissimos quibusdam ipsa?</p>
             </div>
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid mt-5 mb-4">
         <div class="row">
 
-            <div class="col">
-                <div id="fondo-metodo" class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="row fondo-metodo">
                 </div>
             </div>
 
-            <div class="col">
-                <div id="fondo-pizarron" class="row">
-                    <img class="icono pt-5 mx-auto" src="img/iconos/metodologia-icon.png" alt="" srcset="">
-                    <h3 class="text-center">Metodología</h3>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="row fondo-pizarron">
+                    <div class="row">
+                        <img class="icono mx-auto mt-5 mb-3" src="img/iconos/metodologia-icon.png" alt="" srcset="">
+                    <h4 class="text-center">Metodología</h4>
+                    </div>
+                    <div class="row">
                     <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, tempora
                         consequatur. Ipsam porro ad labore dolore tempore nihil, quidem architecto officiis perferendis
                         reprehenderit excepturi minus perspiciatis facere, dignissimos quibusdam ipsa?</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -141,7 +146,7 @@
     </div>
     <div class="container">
         <div class="row text-green">
-            <div class="col">
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <img src="img/iconos/servicios-icon/educacion.png" alt="" srcset="" class="mx-auto mb-3">
                 <h5 class="text-center">Educación para</h5>
                 <h5 class="text-center">el Desarrollo Sostenible</h5>
@@ -150,7 +155,7 @@
                     perferendis
                     reprehenderit excepturi minus perspiciatis facere, dignissimos quibusdam ipsa?</p>
             </div>
-            <div class="col">
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <img src="img/iconos/servicios-icon/mitigacion.png" alt="" srcset="" class="mx-auto mb-3">
                 <h5 class="text-center">Mitigación</h5>
                 <h5 class="text-center">Cambio Climático</h5>
@@ -159,7 +164,7 @@
                     perferendis
                     reprehenderit excepturi minus perspiciatis facere, dignissimos quibusdam ipsa?</p>
             </div>
-            <div class="col">
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <img src="img/iconos/servicios-icon/bienestar.png" alt="" srcset="" class="mx-auto mb-3">
                 <h5 class="text-center">Bienestar</h5>
                 <h5 class="text-center">Ocupacional</h5>
@@ -168,9 +173,8 @@
                     perferendis
                     reprehenderit excepturi minus perspiciatis facere, dignissimos quibusdam ipsa?</p>
             </div>
-        </div>
-        <div class="row text-green">
-            <div class="col">
+        
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <img src="img/iconos/servicios-icon/seguridad-icon.png" alt="" srcset="" class="mx-auto mb-3">
                 <h5 class="text-center">Consultorias en Seguridad</h5>
                 <h5 class="text-center">Ambiental y Medio Ambiente</h5>
@@ -179,7 +183,7 @@
                     perferendis
                     reprehenderit excepturi minus perspiciatis facere, dignissimos quibusdam ipsa?</p>
             </div>
-            <div class="col">
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <img src="img/iconos/servicios-icon/manejo-de-agua.png" alt="" srcset="" class="mx-auto mb-3">
                 <h5 class="text-center">Manejo de</h5>
                 <h5 class="text-center">Aguas</h5>
@@ -188,7 +192,7 @@
                     perferendis
                     reprehenderit excepturi minus perspiciatis facere, dignissimos quibusdam ipsa?</p>
             </div>
-            <div class="col">
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <img src="img/iconos/servicios-icon/agricultura-icon.png" alt="" srcset="" class="mx-auto mb-3">
                 <h5 class="text-center">Agricultura</h5>
                 <p class="text-center text-black pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
@@ -202,7 +206,7 @@
         <h4 class="pb-4">Proyectos</h4>
         <div class="container">
             <div class="row pb-4">
-                <div class="col-6">
+                <div class="col-lg-6 col-md-6 col-sm-12">
                     <img class="bg-img-block col-12 ps-3 pe-3" src="img/fotos/img-0352.JPG" alt="" srcset="">
                 </div>
                 <div class="col-6 ps-0">
@@ -214,7 +218,7 @@
                 </div>
             </div>
             <div class="row pb-5">
-                <div class="col-6">
+                <div class="col-lg-6 col-md-6 col-sm-12">
                     <img class="bg-img-block col-12 ps-3 pe-3" src="img/fotos/img-9246.jpg" alt="" srcset="">
                 </div>
                 <div class="col-6 ps-0">
